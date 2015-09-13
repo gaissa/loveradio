@@ -3,10 +3,10 @@ a,
 a:focus,
 a:hover
 {
-	color: #fff;
-	background-color: #666;
-	cursor:pointer;
-	cursor:hand;
+    color: #fff;
+    background-color: #666;
+    cursor:pointer;
+    cursor:hand;
 }
 
 
@@ -30,15 +30,15 @@ html,
 body
 {
   height: 100%;
- 
+
 }
-body 
+body
 {
   overflow-y: scroll;
   overflow-x: hidden;
-  
+
   text-align: center;
- 
+
 }
 
 
@@ -86,8 +86,8 @@ body
 .masthead-nav > li + li {
 
 }
-.masthead-nav > li > a 
-{  
+.masthead-nav > li > a
+{
   padding: 8px;
   font-size: 19px;
   border-bottom: 2px solid transparent;
@@ -137,6 +137,6 @@ body
   .masthead,
   .mastfoot,
   .cover-container {
- 
+
   }
 }

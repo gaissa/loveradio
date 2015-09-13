@@ -70,11 +70,11 @@
                 <div class="inner cover">
                     <h3 class="cover-heading"></h3>
                     <hr>
-					<div id="now-holder">
+                    <div id="now-holder">
                     <p class="now"></p>
-					</div>
-					<br>
-                    
+                    </div>
+                    <br>
+
                     <div class="placeholder"></div>
                 </div>
 
@@ -188,7 +188,7 @@
                     if (loader == true)
                     {
                         for (i = 0; i <= $(".now").text().length; i++ )
-                        {	$(".now").show();
+                        {   $(".now").show();
                             $('.now .char' + i).fadeIn(1000 + (i * 100));
                             //$( '.now .char' + i ).animate(
                             //{
@@ -208,13 +208,13 @@
                         }
                     }
                 }
-				else
-				{
-					$('.now').fadeOut(4500);
-				}
-				
+                else
+                {
+                    $('.now').fadeOut(4500);
+                }
+
                 if (loader == true)
-                {						
+                {
                     lib(true);
                 }
                 else
@@ -226,18 +226,18 @@
     }
 
     $("#history").click(function()
-	{
-        //$('.placeholder').empty();		
+    {
+        //$('.placeholder').empty();
     });
-	
-	$("#refresh").click(function()
-	{		
-		$(".now").toggle("explode");
-		
-		$(".placeholder").toggle("explode").promise().done(function(){
-			current(true);
-				
-		});				
+
+    $("#refresh").click(function()
+    {
+        $(".now").toggle("explode");
+
+        $(".placeholder").toggle("explode").promise().done(function(){
+            current(true);
+
+        });
     });
 
     function lib(loader)
@@ -250,10 +250,10 @@
             url:"library.php",
             type:'POST',
             success: function(data)
-            {	
+            {
                 $(data).find('.chartlist-artists').each(function()
                 {
-                    artists.push($(this).text());				 
+                    artists.push($(this).text());
                 });
 
                 $(data).find('.link-block-target').each(function()
@@ -269,8 +269,8 @@
 
                     //$('#' + i).lettering();
                     if (loader == true)
-                    {	
-						$(".placeholder").show();
+                    {
+                        $(".placeholder").show();
                         $('#' + i).fadeIn(1500 + (i * 500));
                     }
                     else
