@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="inner cover">
-                    <h3 class="cover-heading">test</h3>
+                    <h3 class="cover-heading"></h3>
 
                     <div id="now-holder">
                     <p class="now"></p>
