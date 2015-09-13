@@ -1,0 +1,76 @@
+/* Comment... */
+.list
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 66%;
+    font-size: 3vw;
+    display: none;
+    color: #666;
+    letter-spacing: -1px;
+}
+
+
+/* Comment... */
+#listeners
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    margin-top: -12px;
+    color: #666;
+}
+
+
+/* Comment... */
+#now-holder
+{
+    min-height: 96px;
+    display: block;
+    padding-bottom: 48px;
+}
+.now
+{
+    margin: auto;
+    padding: 10px;
+}
+.now span
+{
+    letter-spacing: -1px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 63%;
+    font-size: 7vw;
+    min-height: 32px;
+    display: none;
+}
+
+
+/* Comment... */
+#max
+{
+
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 19px;
+  padding-bottom: 12px;
+  letter-spacing: 0.6px;
+  color: #999;
+}
+
+
+/* Comment... */
+#pButton
+{
+    height:64px;
+    width: 64px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+}
+.play
+{
+    background: url('../img/play.png');
+}
+.pause
+{
+    background: url('../img/pause.png');
+}
