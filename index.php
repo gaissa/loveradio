@@ -47,7 +47,7 @@
 
     <div id="audioplayer">
         <button id="pButton" class="play"></button>
-        <div id="max"></div>
+        <div id="listeners"></div><div id="max"></div>
     </div>
 
     <div class="site-wrapper">
@@ -60,8 +60,10 @@
                         <nav>
                             <ul class="nav masthead-nav">
                            <!-- <li class="active"><a href="http://getbootstrap.com/examples/cover/#">home</a></li> -->
+
                                 <li><a target="new" id="refresh" ref="#">refresh</a></li>
                                 <li><a target="new" id="history" ref="#">history</a></li>
+
                             </ul>
                         </nav>
                     </div>
@@ -69,11 +71,10 @@
 
                 <div class="inner cover">
                     <h3 class="cover-heading"></h3>
-                    <hr>
+
                     <div id="now-holder">
                     <p class="now"></p>
                     </div>
-                    <br>
 
                     <div class="placeholder"></div>
                 </div>

@@ -11,10 +11,21 @@
 
 
 /* Comment... */
+#listeners
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    margin-top: -12px;
+    color: #666;
+}
+
+
+/* Comment... */
 #now-holder
 {
-    min-height: 32px;
+    min-height: 96px;
     display: block;
+    padding-bottom: 48px;
 }
 .now
 {
@@ -35,18 +46,20 @@
 /* Comment... */
 #max
 {
+
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 19px;
   padding-bottom: 12px;
   letter-spacing: 0.6px;
+  color: #999;
 }
 
 
 /* Comment... */
 #pButton
 {
-    height:60px;
-    width: 60px;
+    height:64px;
+    width: 64px;
     border: none;
     background-size: 50% 50%;
     background-repeat: no-repeat;
