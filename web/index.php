@@ -46,6 +46,7 @@
     </audio>
 
     <div id="audioplayer">
+
         <button id="pButton" class="play"></button>
         <div id="listeners"></div><div id="max"></div>
     </div>
@@ -53,7 +54,7 @@
     <div class="site-wrapper">
         <div class="site-wrapper-inner">
             <div class="cover-container">
-
+            <p><input id="slider" type="range" min="0" max="100" value="100"></p>
                 <div class="masthead clearfix">
                     <div class="inner">
                         <h4 class="masthead-brand"></h4>
