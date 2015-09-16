@@ -64,7 +64,7 @@
     outline: 0 none !important;
     border-radius: 6px;
     height: 12px;
-    background-color: #000;
+    background-color: #fff;
 }
 #slider::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -74,7 +74,13 @@
     border-radius: 12px;
     cursor: pointer;
 }
-
+#slider::::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
 
 /* Comment... */
 #pButton
