@@ -54,26 +54,6 @@
   color: #999;
 }
 
-
-/* Comment... */
-#slider {
-    -webkit-appearance: none;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    outline: 0 none !important;
-    border-radius: 6px;
-    height: 12px;
-    background-color: #000;
-}
-#slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: #00AAFF;
-    width: 32px;
-    height: 32px;
-    border-radius: 12px;
-    cursor: pointer;
-}
 #slider::-ms-track {
     width: 300px;
     height: 5px;
