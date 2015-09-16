@@ -159,18 +159,24 @@
         });
     }
 
-
     // Comment
     $("#history").click(function()
     {
         //$('.placeholder').empty();
     });
 
-        // Comment
+    // Comment
     $("#slider").mousemove(function()
     {
-        music.volume = $(this).val()/100;
-        //alert($(this).val()/100);
+		if ($(this).val() > 0)
+		{
+			music.volume = $(this).val()/100;
+		}
+		else
+		{
+			//prevent clipping sound.
+			music.volume = 0.01;
+		}        
     });
 
     // Comment
@@ -178,7 +184,6 @@
     {
         play();
     });
-
 
     // Comment
     $("#refresh").click(function()
