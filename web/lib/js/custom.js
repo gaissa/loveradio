@@ -205,7 +205,7 @@
             url:"library.php",
             type:'POST',
             success: function(data)
-            {
+            {					
                 $(data).find('.chartlist-artists').each(function()
                 {
                     artists.push($.trim($(this).text()));
@@ -216,7 +216,7 @@
                     tracks.push($.trim($(this).text()));
                 });
 
-                //$('.placeholder').empty();
+                $('.placeholder').empty();
 
                 for (i = 0; i < artists.length; i++)
                 {
