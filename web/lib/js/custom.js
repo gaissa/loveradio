@@ -7,6 +7,7 @@
     var pButton = document.getElementById('pButton'); // play button
 
     botTimer(true);
+
     var timer = setInterval(function()
                 {
                     botTimer(false)
@@ -18,7 +19,7 @@
         if (music.paused)
         {
             music.play();
-            music.volume = 1;
+            //music.volume = 1;
             pButton.className = "";
             pButton.className = "pause";
         }
