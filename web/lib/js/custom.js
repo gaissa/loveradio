@@ -1,8 +1,6 @@
 // Comment...
 (function() {
 
-    var volume = 0.5;
-
     var music = document.getElementById('music'); // id for audio element
     var pButton = document.getElementById('pButton'); // play button
 
@@ -19,7 +17,6 @@
         if (music.paused)
         {
             music.play();
-            //music.volume = 1;
             pButton.className = "";
             pButton.className = "pause";
         }
@@ -170,12 +167,12 @@
     $("#slider").mousemove(function()
     {
 		if ($(this).val() > 0)
-		{
+		{			
 			music.volume = $(this).val()/100;
 		}
 		else
 		{
-			//prevent clipping sound.
+			//prevent clipping sound.			
 			music.volume = 0.01;
 		}        
     });
