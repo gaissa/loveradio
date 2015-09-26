@@ -84,7 +84,7 @@
         }
     }
 
-    // COMMENT
+    // Get the currentryl playing track.
     function current(loader)
     {
         $(".now").show();
@@ -246,5 +246,6 @@
             }
         });
     }
+	
 
 })();
