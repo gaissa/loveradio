@@ -164,8 +164,7 @@
                 else
                 {
                     $('.now').fadeOut(4500);
-                    console.log("TÄGITÖN!")
-                    $('.now').html('NO TAG');
+                    $('.now').html('. . . N O  T A G  . . . ');
                 }
            }
         });
