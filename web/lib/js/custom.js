@@ -87,6 +87,8 @@
     // COMMENT
     function current(loader)
     {
+        $(".now").show();
+
         if (loader == true)
         {
             lib(true);
@@ -138,7 +140,7 @@
 
                     if (loader == true)
                     {
-                        $(".now").show();
+                        //$(".now").show();
                         for (i = 0; i <= $(".now").text().length; i++ )
                         {
                             $('.now .char' + i).fadeIn(0 + (i * 100));
@@ -150,7 +152,7 @@
                     }
                     else
                     {
-                        $(".now").show();
+                        //$(".now").show();
                         for (i = 0; i <= $(".now").text().length; i++ )
                         {
                             $('.now .char' + i).show();
