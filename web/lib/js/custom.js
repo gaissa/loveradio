@@ -15,7 +15,7 @@
     var pTimer = setInterval(function()
                 {
                     playerTimer()
-                }, 120000);
+                }, 90000);
 
     // Play and Pause button functions.
     function play()
@@ -136,10 +136,11 @@
                         $(".now").lettering();
                     }
 
+                    $(".now").show();
                     if (loader == true)
                     {
                         for (i = 0; i <= $(".now").text().length; i++ )
-                        {   $(".now").show();
+                        {
                             $('.now .char' + i).fadeIn(0 + (i * 100));
                             $( '.now .char' + i ).animate(
                             {
@@ -149,6 +150,7 @@
                     }
                     else
                     {
+                        $(".now").show();
                         for (i = 0; i <= $(".now").text().length; i++ )
                         {
                             $('.now .char' + i).show();
@@ -161,7 +163,9 @@
                 }
                 else
                 {
-                    $('.now').fadeOut(4500);					
+                    $('.now').fadeOut(4500);
+                    console.log("TÄGITÖN!")
+                    $('.now').html('NO TAG');
                 }
            }
         });
