@@ -264,9 +264,9 @@
 
         pTimer = setInterval(function()
                 {
-                    botTimer(false)
+                    playerTimer(false)
                 },
-                btime);
+                ptime);
 
         bTimer = setInterval(function()
                 {
