@@ -23,13 +23,11 @@
         if (music.paused)
         {
             music.play();
-            pButton.className = "";
             pButton.className = "pause";
         }
         else
         {
             music.pause();
-            pButton.className = "";
             pButton.className = "play";
         }
     }
@@ -65,6 +63,13 @@
                     if (listeners[i] == "Mount Point /love.mp3")
                     {
                         jQuery("#listeners").html("listeners: " + listeners[i+11] + " / " + listeners[i+13]);
+                        $(pButton).css("visibility", "visible");
+                        break;
+                    }
+                    else
+                    {
+                        jQuery("#listeners").html('<span style="color:darkred">BROADCAST OFF</span>');
+                        $(pButton).css("visibility", "hidden");
                     }
                 }
             }
@@ -84,7 +89,7 @@
         }
     }
 
-    // Get the currentryl playing track.
+    // Get the currently playing track.
     function current(loader)
     {
         $(".now").show();
@@ -100,7 +105,7 @@
 
         var artists = [];
         var tracks = [];
-        var times = [];
+        //var times = [];
 
         $.ajax({
            url:"current.php",
@@ -111,7 +116,7 @@
 
                 $(data).find('.chartlist-timestamp span').each(function()
                 {
-                    times.push($(this).text());
+                    //times.push($(this).text());
                     //console.log($(this).text());
 
                     if ($(this).text() == 'Scrobbling now')
@@ -140,7 +145,6 @@
 
                     if (loader == true)
                     {
-                        //$(".now").show();
                         for (i = 0; i <= $(".now").text().length; i++ )
                         {
                             $('.now .char' + i).fadeIn(0 + (i * 100));
@@ -152,7 +156,6 @@
                     }
                     else
                     {
-                        //$(".now").show();
                         for (i = 0; i <= $(".now").text().length; i++ )
                         {
                             $('.now .char' + i).show();
@@ -166,7 +169,7 @@
                 else
                 {
                     $('.now').fadeOut(4500);
-                    $('.now').html('. . . N O  T A G  . . . ');
+                    $('.now').html('. . . _!_ . . .');
                 }
            }
         });
@@ -187,7 +190,7 @@
         }
         else
         {
-            music.volume = 0.01;  // Prevent clipping sound.
+            music.volume = 0.01;  // Prevent the clipping sound.
         }
     });
 
@@ -200,8 +203,6 @@
     // The Refresh button.
     $("#refresh").click(function()
     {
-        //$('.placeholder').empty();
-        //$(".now").empty();
         current(false);
         playerTimer();
     });
@@ -243,9 +244,23 @@
                         $('#' + i).show();
                     }
                 }
+
+                $(window).scroll(function()
+                {
+                   if ($(window).scrollTop() + window.innerHeight == $(document).height())
+                   {
+                       $('#footer-style').show();
+                   }
+                   else
+                   {
+                       $('#footer-style').hide();
+                   }
+
+                });
             }
+
         });
+
     }
-	
 
 })();

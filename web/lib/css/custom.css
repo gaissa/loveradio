@@ -16,7 +16,7 @@
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
     margin-top: -12px;
-    color: #666;
+    color: #darkgreen;
 }
 
 
@@ -52,6 +52,24 @@
   padding-bottom: 12px;
   letter-spacing: 0.6px;
   color: #999;
+}
+
+
+/* Comment... */
+#footer-style
+{
+	position: fixed;
+    bottom: 0;
+	width: 100%;
+	display: none;
+	background: #ggg;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 13px;
+    font-weight: bold;	
+	letter-spacing: 1.1px;
+	color: #000;
+	filter: alpha(opacity=55);
+    opacity: 0.55;    
 }
 
 
