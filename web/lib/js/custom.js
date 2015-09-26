@@ -110,7 +110,7 @@
                 $(data).find('.chartlist-timestamp span').each(function()
                 {
                     times.push($(this).text());
-                    console.log($(this).text());
+                    //console.log($(this).text());
 
                     if ($(this).text() == 'Scrobbling now')
                     {
@@ -161,7 +161,7 @@
                 }
                 else
                 {
-                    $('.now').fadeOut(4500);
+                    $('.now').fadeOut(4500);					
                 }
            }
         });
