@@ -63,7 +63,7 @@
                             <ul class="nav masthead-nav">
                                 <!-- <li class="active"><a href="#">home</a></li> -->
                                 <li><a target="new" id="refresh" ref="#">refresh</a></li>
-                                <li><a target="new" id="history" ref="#">history</a></li>
+                                <!--<li><a target="new" id="history" ref="#">history</a></li>-->
                             </ul>
                         </nav>
                     </div>
@@ -80,11 +80,11 @@
                 </div>
 
             </div>
-			 <div id="footer-style">source available @ <a href="https://github.com/gaissa/loveradio">GitGub</a></div>
+             <div id="footer-style">source available @ <a href="https://github.com/gaissa/loveradio">GitGub</a></div>
         </div>
-		
+
     </div>
-	
+
 
 
     <!-- Bootstrap core JavaScript

@@ -58,18 +58,18 @@
 /* Comment... */
 #footer-style
 {
-	position: fixed;
+    position: fixed;
     bottom: 0;
-	width: 100%;
-	display: none;
-	background: #ggg;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 13px;
-    font-weight: bold;	
-	letter-spacing: 1.1px;
-	color: #000;
-	filter: alpha(opacity=55);
-    opacity: 0.55;    
+    width: 100%;
+    display: none;
+    background: #ggg;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    color: #000;
+    filter: alpha(opacity=55);
+    opacity: 0.55;
 }
 
 
@@ -77,14 +77,14 @@ input[type=range] {
     /*removes default webkit styles*/
     -webkit-appearance: none;
     width: 20%;
-	margin-left: 40%;
-	margin-right: 40%;	
+    margin-left: 40%;
+    margin-right: 40%;
 }
-input[type=range]::-webkit-slider-runnable-track  {   
-    height: 5px;   
+input[type=range]::-webkit-slider-runnable-track  {
+    height: 5px;
     border: none;
     border-radius: 12px;
-	background: #000;
+    background: #000;
 }
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -99,7 +99,7 @@ input[type=range]:focus {
     outline: none;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-    
+
 }
 
 input[type=range]::-moz-range-track {
@@ -124,10 +124,10 @@ input[type=range]:-moz-focusring{
 
 input[type=range]::-ms-track {
 
-    height: 5px;    
+    height: 5px;
     /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
     background: transparent;
-    
+
     /*leave room for the larger thumb to overflow with a transparent border */
     border-color: transparent;
     border-width: 6px 0;
@@ -136,7 +136,7 @@ input[type=range]::-ms-track {
     color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-   	background: #000;
+    background: #000;
     border-radius: 10px;
 }
 input[type=range]::-ms-fill-upper {
@@ -151,7 +151,7 @@ input[type=range]::-ms-thumb {
     background: #00AAFF;
 }
 input[type=range]:focus::-ms-fill-lower {
-   	background: #000;
+    background: #000;
 }
 input[type=range]:focus::-ms-fill-upper {
     background: #ccc;

@@ -1,6 +1,9 @@
 // COMMENT
 (function() {
 
+    var btime = 45000;
+    var ptime = 90000;
+
     var music = document.getElementById('music'); // Id for audio element.
     var pButton = document.getElementById('pButton'); // Play/Pause button.
 
@@ -10,12 +13,14 @@
     var bTimer = setInterval(function()
                 {
                     botTimer(false)
-                }, 45000);
+                },
+                btime);
 
     var pTimer = setInterval(function()
                 {
                     playerTimer()
-                }, 90000);
+                },
+                ptime);
 
     // Play and Pause button functions.
     function play()
@@ -176,38 +181,6 @@
     }
 
     // COMMENT
-    $("#history").click(function()
-    {
-        // NOTHING YET
-    });
-
-    // The volume slider.
-    $("#slider").mousemove(function()
-    {
-        if ($(this).val() > 0)
-        {
-            music.volume = $(this).val()/100;
-        }
-        else
-        {
-            music.volume = 0.01;  // Prevent the clipping sound.
-        }
-    });
-
-    // The Play button.
-    $(".play").click(function()
-    {
-        play();
-    });
-
-    // The Refresh button.
-    $("#refresh").click(function()
-    {
-        current(false);
-        playerTimer();
-    });
-
-    // COMMENT
     function lib(loader)
     {
         var artists = [];
@@ -245,6 +218,7 @@
                     }
                 }
 
+                // COMMENT
                 $(window).scroll(function()
                 {
                    if ($(window).scrollTop() + window.innerHeight == $(document).height())
@@ -255,12 +229,56 @@
                    {
                        $('#footer-style').hide();
                    }
-
                 });
             }
-
         });
-
     }
+
+    // The play button.
+    $(".play").click(function()
+    {
+        play();
+    });
+
+    // The volume slider.
+    $("#slider").mousemove(function()
+    {
+        if ($(this).val() > 0)
+        {
+            music.volume = $(this).val()/100;
+        }
+        else
+        {
+            music.volume = 0.01;  // Prevent the clipping sound.
+        }
+    });
+
+    // The refresh button.
+    $("#refresh").click(function()
+    {
+        clearInterval(pTimer);
+        clearInterval(bTimer);
+
+        playerTimer();
+        current(false);
+
+        pTimer = setInterval(function()
+                {
+                    botTimer(false)
+                },
+                btime);
+
+        bTimer = setInterval(function()
+                {
+                    botTimer(false)
+                },
+                btime);
+    });
+
+    // COMMENT
+    $("#history").click(function()
+    {
+        // NOTHING YET
+    });
 
 })();
