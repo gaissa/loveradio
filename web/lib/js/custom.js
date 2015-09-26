@@ -1,6 +1,9 @@
 // COMMENT
 (function() {
 
+    var bTimer,
+        pTimer;
+
     var btime = 45000;
     var ptime = 90000;
 
@@ -9,18 +12,22 @@
 
     botTimer(true);
     playerTimer();
+    timerFunction();
 
-    var bTimer = setInterval(function()
-                {
-                    botTimer(false)
-                },
-                btime);
+    function timerFunction()
+    {
+        bTimer = setInterval(function()
+        {
+            botTimer(false)
+        },
+        btime);
 
-    var pTimer = setInterval(function()
-                {
-                    playerTimer()
-                },
-                ptime);
+        pTimer = setInterval(function()
+        {
+            playerTimer()
+        },
+        ptime);
+    }
 
     // Play and Pause button functions.
     function play()
@@ -256,23 +263,12 @@
     // The refresh button.
     $("#refresh").click(function()
     {
-        clearInterval(pTimer);
         clearInterval(bTimer);
+        clearInterval(pTimer);
 
-        playerTimer();
         current(false);
-
-        pTimer = setInterval(function()
-                {
-                    playerTimer(false)
-                },
-                ptime);
-
-        bTimer = setInterval(function()
-                {
-                    botTimer(false)
-                },
-                btime);
+        playerTimer();
+        timerFunction();
     });
 
     // COMMENT
