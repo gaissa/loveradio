@@ -80,7 +80,7 @@
                 </div>
 
             </div>
-             <div id="footer-style">source available @ <a href="https://github.com/gaissa/loveradio">GitGub</a></div>
+             <div id="footer-style">source available @ <a href="https://github.com/gaissa/loveradio">GitHub</a></div>
         </div>
 
     </div>
