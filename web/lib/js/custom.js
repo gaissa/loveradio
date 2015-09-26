@@ -1,17 +1,23 @@
-// Comment...
+// COMMENT
 (function() {
 
-    var music = document.getElementById('music'); // id for audio element
-    var pButton = document.getElementById('pButton'); // play button
+    var music = document.getElementById('music'); // Id for audio element.
+    var pButton = document.getElementById('pButton'); // Play/Pause button.
 
     botTimer(true);
+    playerTimer();
 
-    var timer = setInterval(function()
+    var bTimer = setInterval(function()
                 {
                     botTimer(false)
-                }, 45000);
+                }, 30000);
 
-    // Play and Pause
+    var pTimer = setInterval(function()
+                {
+                    playerTimer()
+                }, 120000);
+
+    // Play and Pause button functions.
     function play()
     {
         if (music.paused)
@@ -28,17 +34,10 @@
         }
     }
 
-    // Comment
-    function botTimer(loader)
+    // The data loader for the player bar.
+    function playerTimer()
     {
-        if (loader == false)
-        {
-            current(false);
-        }
-        else
-        {
-            current(true);
-        }
+        var listeners = [];
 
         $.ajax(
         {
@@ -49,8 +48,6 @@
                 jQuery("#max").html(data.replace(/(<([^>]+)>)/ig, "").replace('&#2013265924;', 'Ä'));
             }
         });
-
-        var listeners = [];
 
         $.ajax(
         {
@@ -74,9 +71,31 @@
         });
     }
 
-    // Comment
+    // COMMENT
+    function botTimer(loader)
+    {
+        if (loader == false)
+        {
+            current(false);
+        }
+        else
+        {
+            current(true);
+        }
+    }
+
+    // COMMENT
     function current(loader)
     {
+        if (loader == true)
+        {
+            lib(true);
+        }
+        else
+        {
+            lib(false);
+        }
+
         var artists = [];
         var tracks = [];
         var times = [];
@@ -144,55 +163,44 @@
                 {
                     $('.now').fadeOut(4500);
                 }
-
-                if (loader == true)
-                {
-                    lib(true);
-                }
-                else
-                {
-                    lib(false);
-                }
            }
         });
     }
 
-    // Comment
+    // COMMENT
     $("#history").click(function()
     {
-        //$('.placeholder').empty();
+        // NOTHING YET
     });
 
-    // Comment
+    // The volume slider.
     $("#slider").mousemove(function()
     {
-		if ($(this).val() > 0)
-		{			
-			music.volume = $(this).val()/100;
-		}
-		else
-		{
-			//prevent clipping sound.			
-			music.volume = 0.01;
-		}        
+        if ($(this).val() > 0)
+        {
+            music.volume = $(this).val()/100;
+        }
+        else
+        {
+            music.volume = 0.01;  // Prevent clipping sound.
+        }
     });
 
-    // Comment
+    // The Play button.
     $(".play").click(function()
     {
         play();
     });
 
-    // Comment
+    // The Refresh button.
     $("#refresh").click(function()
     {
-        $(".now").empty();
         $('.placeholder').empty();
+        $(".now").empty();
         current(true);
     });
 
-
-    // Comment
+    // COMMENT
     function lib(loader)
     {
         var artists = [];
@@ -203,7 +211,7 @@
             url:"library.php",
             type:'POST',
             success: function(data)
-            {					
+            {
                 $(data).find('.chartlist-artists').each(function()
                 {
                     artists.push($.trim($(this).text()));
@@ -214,13 +222,12 @@
                     tracks.push($.trim($(this).text()));
                 });
 
-                $('.placeholder').empty();
+                $('.placeholder').empty(); // Empty played tracks.
 
                 for (i = 0; i < artists.length; i++)
                 {
                     $('.placeholder').append('<p class="list" id="' + i + '">' + artists[i] + " - " + tracks[i] + '</p>');
 
-                    //$('#' + i).lettering();
                     if (loader == true)
                     {
                         $('#' + i).fadeIn(1500 + (i * 1500));
