@@ -10,7 +10,7 @@
     var bTimer = setInterval(function()
                 {
                     botTimer(false)
-                }, 30000);
+                }, 45000);
 
     var pTimer = setInterval(function()
                 {
@@ -200,9 +200,10 @@
     // The Refresh button.
     $("#refresh").click(function()
     {
-        $('.placeholder').empty();
-        $(".now").empty();
-        current(true);
+        //$('.placeholder').empty();
+        //$(".now").empty();
+        current(false);
+        playerTimer();
     });
 
     // COMMENT
