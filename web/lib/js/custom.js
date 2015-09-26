@@ -136,9 +136,9 @@
                         $(".now").lettering();
                     }
 
-                    $(".now").show();
                     if (loader == true)
                     {
+                        $(".now").show();
                         for (i = 0; i <= $(".now").text().length; i++ )
                         {
                             $('.now .char' + i).fadeIn(0 + (i * 100));
