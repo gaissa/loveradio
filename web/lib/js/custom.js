@@ -181,20 +181,20 @@
                 else
                 {
                     //$('.now').fadeOut(4500);
-					
+
                     $('.now').html('. . . _!_ . . .');
-					$(".now").lettering();
-					
-					for (i = 0; i <= $(".now").text().length; i++ )
-					{
-						$('.now .char' + i).fadeIn(0 + (i * 100));
-						$( '.now .char' + i ).animate(
-						{
-						  color: "#00AAFF",
-						}, 2000 );
-					}
+                    $(".now").lettering();
+
+                    for (i = 0; i <= $(".now").text().length; i++ )
+                    {
+                        $('.now .char' + i).fadeIn(0 + (i * 100));
+                        $( '.now .char' + i ).animate(
+                        {
+                          color: "#00AAFF",
+                        }, 2000 );
+                    }
                 }
-				
+
 
            }
         });
