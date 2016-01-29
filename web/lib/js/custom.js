@@ -74,7 +74,7 @@
                 {
                     if (listeners[i] == "Mount Point /love.mp3")
                     {
-                        jQuery("#listeners").html("listeners: " + listeners[i+11] + " / " + listeners[i+13]);
+                        jQuery("#listeners").html("listeners: " + listeners[i+12] + " / " + listeners[i+13]);
                         $(pButton).css("visibility", "visible");
                         break;
                     }
