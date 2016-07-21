@@ -47,7 +47,7 @@
 
     <div id="audioplayer">
         <button id="pButton" class="play"></button>
-		<div id="external">listen with <a href=" http://radio.hear.fi:8000/love.mp3.m3u">external player</a></div>
+		<div id="external"><a href=" http://radio.hear.fi:8000/love.mp3.m3u">listen with external player</a></div>
 		<br>
         <div id="listeners"></div><div id="max"></div>
     </div>
