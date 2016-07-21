@@ -47,6 +47,8 @@
 
     <div id="audioplayer">
         <button id="pButton" class="play"></button>
+		<div id="external"><a href=" http://radio.hear.fi:8000/love.mp3.m3u">external player</a></div>
+		<br>
         <div id="listeners"></div><div id="max"></div>
     </div>
 
@@ -63,7 +65,8 @@
                             <ul class="nav masthead-nav">
                                 <!-- <li class="active"><a href="#">home</a></li> -->
                                 <li><a target="new" id="refresh" ref="#">refresh</a></li>
-                                <!--<li><a target="new" id="history" ref="#">history</a></li>-->
+								<!-- <li><a target="new" id="refresh" ref="#">external player</a></li> -->
+                                <!-- <li><a target="new" id="history" ref="#">history</a></li> -->
                             </ul>
                         </nav>
                     </div>

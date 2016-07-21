@@ -9,6 +9,15 @@
     letter-spacing: -1px;
 }
 
+/* Comment... */
+#external a
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 14px;	
+	padding: 4px 8px 4px 8px !important;
+	color: #666;
+	background: none;
+}
 
 /* Comment... */
 #listeners
