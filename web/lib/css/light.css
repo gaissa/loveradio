@@ -1,86 +1,104 @@
 /* Links */
 a,
 a:focus,
-a:hover {
+a:hover
+{
     color: #fff;
     background-color: #666;
     cursor:pointer;
     cursor:hand;
 }
 
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
-.btn-default:focus {
-    color: #333;
-    text-shadow: none; /* Prevent inheritence from `body` */
-    background-color: #fff;
-    border: 1px solid #fff;
+.btn-default:focus
+{
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 
-/* Base structure */
-hr {
-    background-color: #999; height: 1px; border: 0;
-}
+
+/*
+ * Base structure
+ */
+hr { background-color: #999; height: 1px; border: 0; }
 html,
-body {
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    text-align: center;
+body
+{
+  height: 100%;
+
 }
+body
+{
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  text-align: center;
+
+}
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-    display: table;
-    width: 100%;
-    height: 100%; /* For at least Firefox */
-    min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
-    display: table-cell;
-    vertical-align: top;
-    padding-bottom: 3%;
+  display: table-cell;
+  vertical-align: top;
+  padding-bottom: 3%;
 }
 .cover-container {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 
 /* Padding for spacing */
 .inner {
-    padding: 30px;
+  padding: 30px;
 }
 
-/* Header */
+/*
+ * Header
+ */
 .masthead-brand {
-    font-size: 1vw;
-    margin-top: 16px;
-    min-height: 36px;
-    max-width: 25%;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: #999;
+  font-size: 1vw;
+  margin-top: 16px;
+  min-height: 36px;
+  max-width: 25%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #999;
 }
+
 .masthead-nav > li {
-    display: inline-block;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+  display: inline-block;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .masthead-nav > li + li {
+
 }
-.masthead-nav > li > a {
-    padding: 8px;
-    font-size: 19px;
-    border-bottom: 2px solid transparent;
+.masthead-nav > li > a
+{
+  padding: 8px;
+  font-size: 19px;
+  border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-    background-color: transparent;
-    color: #000;
+.masthead-nav > li > a:focus
+{
+  background-color: transparent;
+  color: #000;
 }
 
-/* Media float fix */
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
@@ -90,25 +108,35 @@ body {
   }
 }
 
-/* Cover */
+
+/*
+ * Cover
+ */
 .cover {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 .cover .btn-lg {
-    padding: 10px 20px;
-    font-weight: bold;
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
-/* Footer */
+
+/*
+ * Footer
+ */
 .mastfoot {
-    color: #999; /* IE8 proofing */
-    color: rgba(255,255,255,.5);
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
 }
 
-/* Affix and center */
+
+/*
+ * Affix and center
+ */
 @media (min-width: 10px) {
   .masthead,
   .mastfoot,
   .cover-container {
+
   }
 }
