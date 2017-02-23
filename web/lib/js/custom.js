@@ -1,4 +1,4 @@
-// COMMENT
+// LOVERADIO
 (function() {
 
     var bTimer,
@@ -222,7 +222,7 @@
                     tracks.push($.trim($(this).text()));
                 });
 
-                $('.placeholder').empty(); // Empty played tracks.
+                $('.placeholder').empty(); // Clear played tracks.
 
                 for (i = 0; i < artists.length; i++)
                 {
