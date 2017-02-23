@@ -144,7 +144,7 @@
                         artists.push($.trim($(this).text()));
                     });
 
-                    $(data).find('.link-block-target').each(function()
+                    $(data).find('.chartlist-ellipsis-wrap .link-block-target').each(function()
                     {
                         tracks.push($.trim($(this).text()));
                     });
