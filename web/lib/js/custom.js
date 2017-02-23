@@ -82,6 +82,7 @@
                     {
                         jQuery("#listeners").html('<span style="color:darkred">BROADCAST OFF</span>');
                         $(pButton).css("visibility", "hidden");
+                        $("#external").css("visibility", "hidden");
                     }
                 }
             }

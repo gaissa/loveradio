@@ -1,46 +1,36 @@
 /* Links */
 a,
 a:focus,
-a:hover
-{
+a:hover {
     color: #fff;
     background-color: #666;
     cursor:pointer;
     cursor:hand;
 }
 
-
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
-.btn-default:focus
-{
+.btn-default:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
   border: 1px solid #fff;
 }
 
-
 /*
  * Base structure
  */
-hr { background-color: #999; height: 1px; border: 0; }
-html,
-body
-{
-  height: 100%;
-
+hr {
+	background-color: #999; height: 1px; border: 0;
 }
-body
-{
+html,
+body {
+  height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-
   text-align: center;
-
 }
-
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -99,6 +89,9 @@ body
   color: #000;
 }
 
+/*
+ * Media float fix
+ */
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
@@ -107,7 +100,6 @@ body
     float: right;
   }
 }
-
 
 /*
  * Cover
@@ -120,7 +112,6 @@ body
   font-weight: bold;
 }
 
-
 /*
  * Footer
  */
@@ -128,7 +119,6 @@ body
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
 }
-
 
 /*
  * Affix and center
