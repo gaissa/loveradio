@@ -1,6 +1,5 @@
-/* Comment... */
-.list
-{
+/* Recent tracks */
+.list {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     line-height: 66%;
     font-size: 3vw;
@@ -9,40 +8,34 @@
     letter-spacing: -1px;
 }
 
-/* Comment... */
-#external a
-{
+/* External link */
+#external a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 14px;	
-	padding: 4px 8px 4px 8px !important;
-	color: #666;
-	background: none;
+    font-size: 14px;
+    padding: 4px 8px 4px 8px !important;
+    color: #666;
+    background: none;
 }
 
-/* Comment... */
-#listeners
-{
+/* Listeners */
+#listeners {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
     margin-top: -12px;
     color: darkgreen;
 }
 
-
-/* Comment... */
-#now-holder
-{
+/* Current track */
+#now-holder {
     min-height: 96px;
     display: block;
     padding-bottom: 48px;
 }
-.now
-{
+.now {
     margin: auto;
     padding: 10px;
 }
-.now span
-{
+.now span {
     letter-spacing: -1px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     line-height: 63%;
@@ -51,10 +44,8 @@
     display: none;
 }
 
-
-/* Comment... */
-#max
-{
+/* Max Swan */
+#max {
 
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 19px;
@@ -63,10 +54,8 @@
   color: #999;
 }
 
-
-/* Comment... */
-#footer-style
-{
+/* Footer */
+#footer-style {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -81,7 +70,7 @@
     opacity: 0.55;
 }
 
-
+/* Inputs */
 input[type=range] {
     /*removes default webkit styles*/
     -webkit-appearance: none;
@@ -107,9 +96,7 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]:focus {
     outline: none;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
-
-}
+input[type=range]:focus::-webkit-slider-runnable-track {}
 
 input[type=range]::-moz-range-track {
     height: 5px;
@@ -124,15 +111,12 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
     background: #00AAFF;
 }
-
 /*hide the outline behind the border*/
-input[type=range]:-moz-focusring{
+input[type=range]:-moz-focusring {
     outline: 1px solid white;
     outline-offset: -1px;
 }
-
 input[type=range]::-ms-track {
-
     height: 5px;
     /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
     background: transparent;
@@ -166,10 +150,8 @@ input[type=range]:focus::-ms-fill-upper {
     background: #ccc;
 }
 
-
-/* Comment... */
-#pButton
-{
+/* Play button */
+#pButton {
     height:64px;
     width: 64px;
     border: none;
@@ -178,11 +160,9 @@ input[type=range]:focus::-ms-fill-upper {
     background-position: center;
     outline: none;
 }
-.play
-{
+.play {
     background: url('../img/play.png');
 }
-.pause
-{
+.pause {
     background: url('../img/pause.png');
 }
