@@ -1,4 +1,4 @@
-// LOVERADIO
+// COMMENT
 (function() {
 
     var bTimer,
@@ -82,7 +82,6 @@
                     {
                         jQuery("#listeners").html('<span style="color:darkred">BROADCAST OFF</span>');
                         $(pButton).css("visibility", "hidden");
-                        $("#external").css("visibility", "hidden");
                     }
                 }
             }
@@ -223,7 +222,7 @@
                     tracks.push($.trim($(this).text()));
                 });
 
-                $('.placeholder').empty(); // Clear played tracks.
+                $('.placeholder').empty(); // Empty played tracks.
 
                 for (i = 0; i < artists.length; i++)
                 {
