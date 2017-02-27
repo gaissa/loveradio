@@ -1,2 +1,5 @@
-# loveradio
-/_ ( ) \ / /, _
+# /_ ( ) \ / /, _
+<br>
+https://hear.fi/love
+https://loveradio.herokuapp.com
+
