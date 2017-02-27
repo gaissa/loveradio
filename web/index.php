@@ -47,8 +47,8 @@
 
     <div id="audioplayer">
         <button id="pButton" class="play"></button>
-		<div id="external"><a href=" http://radio.hear.fi:8000/love.mp3.m3u">listen with external player</a></div>
-		<br>
+        <div id="external"><a href=" http://radio.hear.fi:8000/love.mp3.m3u">listen with external player</a></div>
+        <br>
         <div id="listeners"></div><div id="max"></div>
     </div>
 
@@ -65,7 +65,7 @@
                             <ul class="nav masthead-nav">
                                 <!-- <li class="active"><a href="#">home</a></li> -->
                                 <li><a target="new" id="refresh" ref="#">refresh</a></li>
-								<!-- <li><a target="new" id="refresh" ref="#">external player</a></li> -->
+                                <!-- <li><a target="new" id="refresh" ref="#">external player</a></li> -->
                                 <!-- <li><a target="new" id="history" ref="#">history</a></li> -->
                             </ul>
                         </nav>
@@ -88,22 +88,20 @@
 
     </div>
 
-
-
-    <!-- Bootstrap core JavaScript
+    <!-- jQueyry & Bootstrap
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./lib/js/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="./lib/js/bootstrap.min.js"></script>
 
-    <!-- Lettering library -->
+    <!-- Lettering JS lib -->
     <script src="./lib/js/lettering.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./lib/js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- Custom functions -->
+    <!-- Custom JS functions -->
     <script src="./lib/js/custom.js"></script>
 
 </body>
