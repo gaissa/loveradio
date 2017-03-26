@@ -1,4 +1,4 @@
-// COMMENT
+// Custom functions.
 (function() {
 
     var bTimer,
@@ -29,7 +29,7 @@
         ptime);
     }
 
-    // Play and Pause button functions.
+    // Play or pause the audio
     function play()
     {
         if (music.paused)
@@ -44,7 +44,7 @@
         }
     }
 
-    // The data loader for the player bar.
+    // The data (message) loader for the header.
     function playerTimer()
     {
         var listeners = [];
@@ -236,7 +236,7 @@
                     }
                 }
 
-                // COMMENT
+                // Show footer link when scrolled to bottom
                 $(window).scroll(function()
                 {
                    if ($(window).scrollTop() + window.innerHeight == $(document).height())
