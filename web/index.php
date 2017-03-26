@@ -87,6 +87,11 @@
         </div>
 
     </div>
+	
+    <script src="https://d3tvtfb6518e3e.cloudfront.net/3/opbeat.min.js"
+      data-org-id="f44199556fc5495cb1e96f50f108543b"
+      data-app-id="bb2c62a48d">
+    </script>
 
     <!-- jQueyry & Bootstrap
     ================================================== -->
