@@ -8,19 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="gaissa">
     <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
 
     <title> /_ ( ) \ / /, _ </title>
 
+    <!-- Opbeat -->
     <script src="https://d3tvtfb6518e3e.cloudfront.net/3/opbeat.min.js"
-        data-org-id="f44199556fc5495cb1e96f50f108543b"
-        data-app-id="bb2c62a48d">
+      data-org-id="f44199556fc5495cb1e96f50f108543b"
+      data-app-id="bb2c62a48d">
     </script>
 
-     <!-- CSS -->
+     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 
      <!-- CSS -->
@@ -32,10 +32,6 @@
     <!-- Custom styles for this template -->
     <link href="./lib/css/light.css" rel="stylesheet">
     <link href="./lib/css/custom.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <style type="text/css"></style><script src="./lib/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
